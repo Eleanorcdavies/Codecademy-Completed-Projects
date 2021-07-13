@@ -1,0 +1,161 @@
+Task One: script1.py
+1.
+Load stock_data_weak.csv file as a DataFrame and save it to a variable called stock_data.
+
+Use print(stock_data) to visualize the data.
+
+
+Hint
+Use pd.read_csv() to load in the file.
+
+2.
+Find the quarterly returns over each period for all assets in stock_data. Save the result to returns_quarterly.
+
+
+Hint
+This step requires that you first select the correct columns, using:
+
+selected = list(stock_data.columns[1:])
+Use the .pct_change() method to find the quarterly return for each asset in stock_data[selected].
+
+3.
+Find the expected return for each asset and save the result to expected_returns.
+
+
+Hint
+Call the .mean() function on returns_quarterly to calculate the expected return values.
+
+4.
+Find the covariance of the quarterly returns over each period and save the result to cov_quarterly.
+
+
+Hint
+Call the .cov() function on returns_quarterly to calculate the expected return values.
+
+5.
+We loaded the function return_portfolios() from rf.py, which accepts the expected return and quarterly covariance of a set of assets and returns a random collection of 5,000 portfolios. The return is formatted as a DataFrame with columns: 'Volatility' and 'Returns'.
+
+Use the expected returns and covariances to find a set of random portfolios. Save the result to random_portfolios.
+
+
+Hint
+Set random_portfolios equal to return_portfolios(expected_returns, cov_quarterly).
+
+6.
+Plot the random portfolios.
+
+
+Stuck? Get a hint
+7.
+We loaded the function optimal_portfolio() from rf.py, which accepts the quarterly returns of a set of assets. The function returns the weights, returns, and risks of portfolios on the efficient frontiers. The returns are formatted as NumPy arrays.
+
+Use the optimal_portfolio() function to calculate the weights, returns, and risks of portfolios on the efficient frontier.
+
+
+Hint
+Use the following code to calculate the weights, returns, and risks of portfolios on the efficient frontier.
+
+weights, returns, risks = optimal_portfolio(returns_quarterly[1:])
+We index from position 1 because the first column is filled with nans.
+
+8.
+Plot the efficient frontier as a yellow line, with dots on the plot.
+
+Use the following code to set the x-label, y-label, and title:
+
+plt.ylabel('Expected Returns',fontsize=14)
+plt.xlabel('Volatility (Std. Deviation)',fontsize=14)
+plt.title('Efficient Frontier', fontsize=24)
+
+Hint
+Use the following code to plot the efficient frontier:
+
+plt.plot(risks, returns, 'y-o')
+Task Two: script2.py
+9.
+You inherited a portfolio with five assets, stored in stock_data_weak.csv:
+
+Asset	Expected Return
+General Electric	-0.0120
+Chesapeake Energy	-0.0306
+AT&T	-0.0014
+Cisco Systems	0.0184
+Campbell Soup	0.0084
+
+Run script2.py to visualize the efficient frontier for these assets.
+
+10.
+You decide to diversify the portfolio with a couple of assets to increase the expected return of portfolios on the efficient frontier.
+
+You choose to add Bank of America and Marvel, so your assets are:
+
+Asset	Expected Return
+General Electric	-0.0120
+Chesapeake Energy	-0.0306
+AT&T	-0.0014
+Cisco Systems	0.0184
+Campbell Soup	0.0084
+Bank of America	0.0341
+Marvel	0.0369
+
+Change the path variable to stock_data2.csv to visualize this new efficient frontier.
+
+11.
+It’s hard to visualize how much the efficient frontier improved with these assets. Let’s plot the original efficient frontier on the same figure. Use the following code to do this:
+
+weak_EF = pd.read_csv('weak_risks_returns.csv')
+plt.plot(weak_EF['Risks'], weak_EF['Returns'], 'g-o')
+To get a better view of the efficient frontier, you may want to comment out the following line:
+
+random_portfolios.plot.scatter(x='Volatility', y='Returns', fontsize=12)
+By adding the two high-return assets, we increased the expected return of portfolios on the efficient frontier.
+
+12.
+If you look at the expected returns of assets in your portfolio, you’ll notice that General Electric and Chesapeake Energy have a large negative return (i.e. you expect to lose money).
+
+Asset	Expected Return
+General Electric	-0.0120
+Chesapeake Energy	-0.0306
+AT&T	-0.0014
+Cisco Systems	0.0184
+Campbell Soup	0.0084
+Bank of America	0.0341
+Marvel	0.0369
+
+This begs the questions: do we need these assets in our portfolio? Given their poor expected return, we should only keep them if they are uniquely uncorrelated to the rest of the assets in the portfolio.
+
+To check the effects of these assets, we calculated the efficient frontier for a portfolio without General Electric and Chesapeake Energy. Add the following code to the bottom of script2.py to visualize this efficient frontier on the same plot:
+
+strong_EF = pd.read_csv('strong_risks_returns.csv')
+plt.plot(strong_EF['Risks'], strong_EF['Returns'], 'k-x')
+What do you notice when you run the code?
+
+
+Hint
+The efficient frontier did not change when you removed the two low return assets. Because these assets had low returns and were correlated to other assets in the portfolio, they didn’t improve the possible portfolios.
+
+Task Three: script3.py
+13.
+Next, you will use your understanding of expected returns and covariances to inform portfolio decisions. We have asset data for 10 stocks, stored in stock_data3.csv.
+
+Open script3.py and run the code.
+
+Scroll to the bottom of the web browser to the right – you should see two efficient frontiers. We calculate the better efficient frontier (green dots) using all ten assets. We calculate the other efficient frontier using only five assets from the portfolio.
+
+Your job is to choose five assets from the following list to create the best efficient frontier.
+
+['PFE', 'TGT', 'M', 'VZ', 'JPM', 'MRO', 'KO', 'PG', 'CVS', 'HPQ']
+Use the expected returns and covariance table to the right, and set the selected variable equal to a list with five of these assets.
+
+In the hint, we provide our best solution and explain how we arrived there.
+
+
+Hint
+Using the following five assets will result in an efficient frontier that closely resembles a portfolio with all ten assets.
+
+selected = ['TGT', 'CVS', 'M', 'VZ', 'JPM']
+We used the following approach to select these assets:
+
+JPM has the largest expected return, so we knew to include it.
+We added the asset that was the least correlated to JPM – VZ has a small negative covariance.
+We selected the assets with the next three highest expected returns: M, CVS, and TGT.
