@@ -1,0 +1,52 @@
+Course Description
+Learn the basics of Pandas, an industry standard Python library that provides tools for data manipulation and analysis.
+
+Details
+Certificate of Completion · View
+6 hours to complete in total
+Intermediate
+
+Use Pandas to create and manipulate tables so that you can process your data faster and get your insights sooner.
+
+Cheatsheet
+
+|
+Practice Pack
+
+Lesson
+Creating, Loading, and Selecting Data with Pandas
+Quiz
+Creating, Loading, and Selecting Data with Pandas
+Lesson
+Modifying DataFrames
+Quiz
+Modifying DataFrames
+Project
+Petal Power Inventory
+Resume
+Learn the basics of aggregate functions in Pandas, which let us calculate quantities that describe groups of data..
+
+Cheatsheet
+
+|
+Practice Pack
+
+Lesson
+Aggregates in Pandas
+Quiz
+Aggregates in Pandas
+Project
+A/B Testing for ShoeFly.com
+Learn how to combine information from multiple DataFrames.
+
+Cheatsheet
+
+|
+Practice Pack
+
+Lesson
+Working with Multiple DataFrames
+Quiz
+Learn Pandas: Multiple Tables Quiz
+Project
+Page Visits Funnel
