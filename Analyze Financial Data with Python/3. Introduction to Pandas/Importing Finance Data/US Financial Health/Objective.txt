@@ -1,0 +1,219 @@
+INTRODUCTION TO PANDAS
+US Financial Health
+In this project, we’ll be importing various types of financial data to try and determine the financial health and volatility of the US between 1999 and 2019.
+
+We’ll use the techniques we’ve learned for importing financial data, to import stock and commodity pricing data from csv files and the FRED API. Then grab GDP and goods and services export data from the World Bank API.
+
+Finally, we’ll find the log returns of the imported data, and use that to determine the volatility of the data over the 20 year period.
+
+Let’s get started!
+
+Tasks
+15/15 Complete
+Mark the tasks as complete by checking them off
+Importing Commodity Prices
+1.
+In the workspace there are two csv files with historical commodity data for gold and crude oil.
+
+This is the commodity data we’ll be importing and operating on.
+
+In order to import csv files, we’ll need the pandas library imported into our program.
+
+Import pandas in a variable called pd.
+
+
+Hint
+import pandas as pd
+2.
+Now that pandas is imported, use its read_csv function to import data from the gold_prices.csv file into a variable called gold_prices.
+
+Then print the gold prices DataFrame and look it over.
+
+
+Hint
+pd.read_csv('filename.csv')
+3.
+Now let’s do the same for the crude oil data.
+
+Import the historical data in crude_oil_prices.csv into a variable called crude_oil_prices.
+
+Then print it out and look it over as well.
+
+
+Hint
+pd.read_csv('filename.csv')
+Importing Stock Prices
+4.
+We’ve imported the commodity prices from their csv files, now we’ll focus on historical stock prices.
+
+Pandas datareader is able to import stock pricing data from the FRED API using the pandas_datareader.data library.
+
+Import pandas_datareader.data as web.
+
+
+Hint
+import pandas_datareader.data as web
+5.
+Since we only want data between 1999 and 2019, we’ll also want to create some start and end variables.
+
+Import the datetime module and create two datetimes, start and end, which represent January 1st of 1999 and 2019 respectively.
+
+
+Hint
+from datetime import datetime
+ 
+start = datetime(year, month, day)
+end = datetime(year, month, day)
+6.
+We can use the web.DataReader function to get historical prices for the NASDAQ 100 from the FRED API.
+
+web.DataReader takes 4 arguments:
+
+Data id code (NASDAQ100)
+The name of the API we want to call (fred)
+Start and end date times
+Call web.DataReader with the appropriate arguments, and store the resulting DataFrame in a variable called nasdaq_data. Then print it out and look at the results.
+
+
+Hint
+nasdaq_data = web.DataReader("NASDAQ100", "fred", start, end)
+7.
+The FRED API also stores data from the S&P 500 Index. Let’s import that as well.
+
+Call web.DataReader just like in the previous step, except change the data id code from NASDAQ100 to SP500.
+
+Store the results in a variable called sap_data and print it out.
+
+
+Hint
+sap_data = web.DataReader(“SP500”, “fred”, start, end) ```
+
+Importing World Bank Data
+8.
+In addition to stock and commodity prices, we also want to import more high level economic data like GDP and the total value of goods and services exported in a given year.
+
+Luckily for us, the World Bank API tracks exactly these things.
+
+First things first, let’s import the World Bank sub-module form pandas datareader.
+
+Import pandas_datareader.wb as wb.
+
+
+Hint
+import pandas_datareader.wb as wb 
+9.
+We can use the wb.download function to get GDP data from the World Bank API.
+
+wb.download takes 4 arguments:
+
+A data indicator (NY.GDP.MKTP.CD)
+A list of countries to get data for
+Start and end datetimes
+A call would look something like this:
+
+wb.download(indicator='INDICATOR', country=['US'], start=start, end=end)
+Call wb.download with the appropriate arguments, and store the resulting DataFrame in a variable called gdp_data.
+
+
+Hint
+wb.download(indicator='NY.GDP.MKTP.CD', country=['US'], start=start, end=end)
+10.
+The World Bank API also stores data about the value of goods and services exported in a given year. Let’s import that as well.
+
+Call wb.download just like in the previous step, except change the indicator from NY.GDP.MKTP.CD to NE.EXP.GNFS.CN.
+
+Store the results in a variable called export_data and print it out.
+
+
+Hint
+wb.download(indicator='NE.EXP.GNFS.CN', country=['US'], start=start, end=end)
+Calculating Log Return
+11.
+At this point, we’ve imported all the data we need. But it’s all stored as either daily or yearly dollar amounts.
+
+Pricing data is useful, but in this case, since we want to compare each data set, it would be even better if instead of daily/yearly pricing, we had information on the log returns from the daily/yearly prices.
+
+As a first step, let’s define a function called log_return, which should accept one parameter, prices. You can leave the function body empty for now.
+
+
+Hint
+def log_return(prices):
+  # code
+12.
+The equation for calculating the log return between two prices is as follows:
+
+natural_log(current price/previous price)
+
+In our case we want to run this equation for each day/year of pricing data in our imported DataFrame Series (A Series is a single column in a DataFrame).
+
+The pandas shift function can be used to divide each current price by its previous price in the Series.
+
+prices / prices.shift(1)
+And we can use numpy’s natural log function to get the log return for each entry in the new Series.
+
+import numpy as np
+np.log(Series)
+Using this information, fill in the code in the log_return function (be sure to import numpy at the top of the file).
+
+
+Hint
+import numpy as np
+...
+def log_return(prices):
+  return np.log(prices / prices.shift(1))
+13.
+Let’s use our new log_return function to calculate the log return of the gold_prices DataFrame we imported.
+
+Create a variable called gold_returns, which stores the result of calling log_return on the Gold_Price column of the gold_prices DataFrame.
+
+
+Hint
+gold_returns = log_return(gold_prices['Gold_Price'])
+14.
+Now create log return variables for each additional dataset (crudeoil_returns, sap_returns, etc.).
+
+Remember that you only need to pass in the column of the DataFrame that contains the pricing data. In the case of gold it was gold_prices['Gold_Price'], but the column name will vary for each dataset.
+
+
+Hint
+crude_oil_returns = log_return(crudeoil_prices['Crude_Oil_Price'])
+nasdaq_returns = log_return(nasdaq_data['NASDAQ100'])
+sap_returns = log_return(sap_data['SP500'])
+gdp_returns = log_return(gdp_data['NY.GDP.MKTP.CD'])
+export_returns = log_return(export_data['NE.EXP.GNFS.CN'])
+Comparing Return Volatility
+15.
+We’re now ready to compare the volatility of each type of data.
+
+Variance, in the context of financial data, tells us how volatile an investment is. Use Panda’s var() function to calculate the variance of the commodities, stocks and World Bank data returns, and print the results.
+
+The results can be interpreted in a number of ways, but generally, the higher the variance the more volatile the data.
+
+What conclusions can you draw from this data? Which dataset was the most volatile? Did any datasets have similar variances?
+
+
+Hint
+print('gold:', gold_returns.var())
+...
+Conclusions
+gold: 0.00011375928671558508
+oil: 0.0005563207795629881
+nasdaq: 0.0003178379833057229
+sap: 8.860342194008153e-05 which is equivalent to 0.00008860342194008153
+gdp: 0.0003576341131987123
+export: 0.006775724487950144
+You should have gotten something similar to what we have above, and this is generally in line with what we would expect.
+
+The S&P 500, a collection of 500 large companies listed on stock exchanges in the United States, has the smallest variance, and thus is the least volatile. Given that the S&P 500 index is a weighted measurement of many stocks across a variety of industries, it is seen as a safer, diversified investment.
+
+Gold, notorious for being a stable investment has the second smallest variance.
+
+Crude oil is the most volatile, which makes sense as gas prices are often unpredictable, especially in the last 20 years.
+
+The stocks are interesting. The NASDAQ 100 is more volatile than the S&P 500, which, when you think about it makes sense, as the S&P 500 is far more diversified and tracks more of the market.
+
+Then finally we have GDP and exports.
+
+Exports are very volatile, which could have to do with industries moving overseas in the last 20 years, and global competition for the production of goods.
+
+GDP is actually fairly similar to the NASDAQ 100 in terms of volatility, which is perhaps an interesting correlation.
