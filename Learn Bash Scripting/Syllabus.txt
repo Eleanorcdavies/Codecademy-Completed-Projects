@@ -1,0 +1,25 @@
+
+100%
+Trophy icon
+Course Description
+In this course, you will learn how to improve your own programming process by writing bash scripts that save you precious time.
+
+Details
+Certificate of Completion · View
+1 hour to complete in total
+Intermediate
+
+Learn how to automate common tasks using bash scripting.
+
+Cheatsheet
+
+|
+Practice Pack
+
+Lesson
+Learn Bash Scripting
+Quiz
+Bash Scripting
+Project
+Build a Build Script
+Resume
