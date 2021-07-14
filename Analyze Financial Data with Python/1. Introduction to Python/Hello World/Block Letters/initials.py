@@ -1,3 +1,4 @@
+#Eleanor Davies
 # I am learning German
 string_E = 'EEEEE\nE\nE\nEEEEE\nE\nE\nEEEEEE'
 # print(string_E)
