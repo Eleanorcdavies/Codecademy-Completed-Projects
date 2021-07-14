@@ -1,0 +1,268 @@
+Path Description
+Analyze Financial Data with Python teaches you how to process, analyze, and visualize finance data. In this Skill Path, you will learn basic Python syntax along with the libraries Pandas, Pandas-Datareader and Matplotlib and apply these skills to a wide variety of financial data.
+
+Details
+Certificate of Completion · View
+7 weeks to complete in total
+Beginner
+
+1. Introduction to Python
+Welcome to Analyze Financial Data with Python! We’re excited to start this journey with you.
+
+Info
+Welcome to Analyze Financial Data with Python
+Resume
+Get started with Python syntax in this lesson and then create a point of sale system for a furniture store!
+
+Cheatsheet
+
+|
+Practice Pack
+
+Lesson
+Hello World
+Quiz
+Hello World
+Project
+Block Letters
+Project
+Receipts for Lovely Loveseats
+Article
+User Input
+Resume
+Learn how the Python programming language can be used to perform financial calculations and analyses.
+
+Lesson
+Why Python For Finance
+Project
+NPV Analysis - Project Greenspace
+Resume
+Learn about code reuse with Python functions. Apply that knowledge to create functions for famous physics formulas.
+
+Cheatsheet
+
+|
+Practice Pack
+
+Lesson
+Introduction to Functions
+Quiz
+Introduction to Functions
+Project
+Getting Ready for Physics Class
+Info
+Off-Platform Project: Reggie's Linear Regression
+Resume
+Learn how to build control flow into your python code by including if, else, and elif statements as well as try and except statements. Expect to learn all you need to know about boolean variables and logical operators.
+
+Cheatsheet
+
+|
+Practice Pack
+
+Lesson
+Control Flow
+Quiz
+Control Flow
+Project
+Magic 8-Ball
+Project
+Sal's Shipping
+Lesson
+Errors in Python
+Resume
+Practice using Jupyter Notebooks, a powerful way to write and iterate on your Python code for data analysis.
+
+Article
+Installing Python 3 and Python Packages
+Info
+Bank Teller
+Info
+Peer Project Feedback
+Resume
+Learn about lists, a data structure in Python used to store ordered groups of data.
+
+Cheatsheet
+
+|
+Practice Pack
+
+Lesson
+Introduction to Lists
+Quiz
+Introduction to Lists
+Project
+Gradebook
+Lesson
+Working with Lists in Python
+Quiz
+Working with Lists in Python
+Project
+Len's Slice
+Video
+Learn Python: Tuples
+Article
+Combining Lists: The Zip Function
+Resume
+Loops are structures that let you repeat Python code over and over. Learn how to read loops and write them to solve your own problems.
+
+Cheatsheet
+
+|
+Practice Pack
+
+Lesson
+Loops
+Quiz
+Loops
+Project
+Carly's Clippers
+Resume
+Learn how to calculate key financial statistics using Python.
+
+Lesson
+Calculating Financial Statistics
+Project
+Analyzing Stock Data
+Quiz
+Calculating Financial Statistics
+Resume
+2. Introduction to NumPy
+Get acquainted with NumPy and learn basic syntax and functionality.
+
+Cheatsheet
+
+|
+Practice Pack
+
+Info
+Introduction to NumPy
+Lesson
+Introduction to NumPy
+Project
+Betty's Bakery
+Quiz
+Introduction to Numpy Quiz
+Resume
+Practice calculating financial statics and using NumPy to analyze Real Estate Investment Trusts, known as REITs.
+
+Info
+Real Estate Investment Trust Analysis
+Info
+Peer Project Feedback
+Resume
+3. Introduction to Pandas
+Use Pandas to create and manipulate tables so that you can process your data faster and get your insights sooner.
+
+Cheatsheet
+
+|
+Practice Pack
+
+Info
+Introduction to Pandas
+Lesson
+Creating, Loading, and Selecting Data with Pandas
+Quiz
+Creating, Loading, and Selecting Data with Pandas
+Lesson
+Modifying DataFrames
+Quiz
+Modifying DataFrames
+Project
+Petal Power Inventory
+Resume
+Learn the basics of aggregate functions in Pandas, which let us calculate quantities that describe groups of data..
+
+Cheatsheet
+
+|
+Practice Pack
+
+Lesson
+Aggregates in Pandas
+Quiz
+Aggregates in Pandas
+Project
+A/B Testing for ShoeFly.com
+Resume
+Learn how to import financial data from APIs using Python.
+
+Cheatsheet
+
+|
+Practice Pack
+
+Lesson
+Importing Finance Data
+Project
+US Financial Health
+Quiz
+Importing Finance Data
+Resume
+4. Visualizing Finance Data
+Master a commonly used Python graphing module, Matplotlib. Soon, you will be producing high-quality plots to visualize your data.
+
+Cheatsheet
+
+|
+Practice Pack
+
+Info
+Introduction to Visualizing Finance Data
+Lesson
+Line Graphs in Matplotlib
+Quiz
+Line Graphs Concepts
+Project
+Sublime Limes' Line Graphs
+Lesson
+Different Plot Types
+Quiz
+Plot Types
+Article
+How to Select a Meaningful Visualization
+Lesson
+Recreate Graphs using Matplotlib!
+Resume
+Learn how to perform mean-variance optimization to select an efficient portfolio of assets.
+
+Lesson
+Mean-Variance Portfolio Optimization
+Project
+Mean Variance Optimization
+Quiz
+Mean Variance Portfolio Optimization
+Resume
+Practice importing and visualizing the stock data of 5 technology companies using APIs, Matplotlib and Jupyter notebooks.
+
+Info
+Visualizing Tech Stocks
+Info
+Peer Project Feedback
+Resume
+5. Regression
+Given a set of points, find a line that fits the data best! Even this simple form of regression allows us to predict future points.
+
+Cheatsheet
+
+|
+Practice Pack
+
+Info
+Introduction to Regression
+Lesson
+Linear Regression
+Quiz
+Linear Regression
+Project
+Honey Production
+Resume
+6. Capstone
+Practice importing financial data, calculating financial statistics, and optimizing a portfolio in this capstone project!
+
+Info
+Analyze Financial Data with Python Capstone
+Info
+Peer Project Feedback
+Resume
