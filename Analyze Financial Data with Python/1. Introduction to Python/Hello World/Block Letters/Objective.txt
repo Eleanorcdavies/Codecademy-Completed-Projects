@@ -1,0 +1,117 @@
+INTRODUCTION TO PYTHON
+Block Letters
+ASCII art is a graphic design technique that uses computers for presentation and consists of pictures pieced together from individual characters.
+
+Write a Python program called initials.py that displays the initials of your name in block letters as shown and dip your toes into ASCII art.
+
+Block Letters
+
+Happy coding!
+
+Tasks
+5/5 Complete
+Mark the tasks as complete by checking them off
+What we are building in this project:
+1.
+Take a look at the complete alphabet and find your initials. Notice how each block letter is 7x5 and formed by the letter itself.
+
+My initials are S and L, so my initials.py program should output:
+
+ SSS   L
+S   S  L
+S      L
+ SSS   L
+    S  L
+S   S  L
+ SSS   LLLLL
+Once you are ready, mark this task complete by checking off the box.
+
+
+Hint
+initials.py should use multiple print() statements to output your initials in block letters.
+
+The numbers in the grid are there to help represent the dimensions of each block letter; you shouldn’t include the numbers in your strings.
+
+Setting up:
+2.
+First, write two comments with:
+
+Your first and last name.
+A fun fact about yourself.
+
+Hint
+A Python comment starts with a # and continues to the end of the line:
+
+# Sonny Li
+# Fun Fact: I played guitar in a band called Attica.
+3.
+Output your first initial as a block letter. There are a few ways to do this!
+
+Press Save to run your program.
+
+
+Hint
+The program can look like this if your first initial is S:
+
+print("  SSS  ")
+print(" S   S ")
+print(" S     ")
+print("  SSS  ")
+print("     S ")
+print(" S   S ")
+print("  SSS  ")
+If you want to use a multi-line string instead, store the string in a variable using triple quote-marks:
+
+name = """ 
+  SSS
+ S   S 
+ S     
+  SSS 
+     S
+ S   S
+  SSS  
+"""
+ 
+print(name)
+4.
+Output your second initial as a block letter by adding to the print() statements.
+
+Press Save to run your program.
+
+
+Hint
+The program should look something like this:
+
+print("  SSS   L     ")
+print(" S   S  L     ")
+print(" S      L     ")
+print("  SSS   L     ")
+print("     S  L     ")
+print(" S   S  L     ")
+print("  SSS   LLLLL ")
+For multi-line string:
+
+name = """ 
+  SSS   L
+ S   S  L
+ S      L   
+  SSS   L
+     S  L
+ S   S  L
+  SSS   LLLLL
+"""
+ 
+print(name)
+Solution:
+5.
+Don’t forget to check off all the tasks before moving on.
+
+Sample solutions:
+
+initials.py
+snowman.py
+P.S. If you make something cool, share it with us!
+
+
+Hint
+Tag @Codecademy on Twitter or make a Pull Request to the Learn Python GitHub repo for a chance to be featured in the course!
