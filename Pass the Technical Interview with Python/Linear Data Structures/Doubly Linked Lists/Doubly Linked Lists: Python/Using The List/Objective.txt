@@ -1,0 +1,76 @@
+DOUBLY LINKED LISTS: PYTHON
+Using the List
+You finished your DoublyLinkedList class! Now we’re going to use that class to model a subway line. A doubly linked list is a great data structure to use to model a subway, as both have a first and last element, and are comprised of nodes (or stops) with links to the elements before and after them.
+
+We will add to and remove stops from our subway line, and print it out to see what we’ve done. The .stringify_list() method is the same as the one from the LinkedList class and has been provided for you.
+
+Instructions
+1.
+We’re going to model a (fictional) subway line that will travel from Central Park to the Brooklyn Bridge.
+
+At the bottom of script.py, outside the DoublyLinkedList class, create a new DoublyLinkedList named subway.
+
+Checkpoint 2 Passed
+
+Hint
+Make sure to scroll all the way down and create your new list outside of the class.
+
+2.
+The subway starts at Central Park and winds its way downtown. In the following order:
+
+Add "Times Square" to the head of the list
+Add "Grand Central" to the head of the list
+Add "Central Park" to the head of the list
+Then print the list.
+
+Checkpoint 3 Passed
+
+Hint
+You can print the list by using .stringify_list():
+
+print(some_list.stringify_list())
+The output should look like:
+
+Central Park
+Grand Central
+Times Square
+Because "Central Park" was added to the head of the list most recently.
+
+3.
+The subway continues from Times Square down to the Brooklyn Bridge. In the following order:
+
+Add "Penn Station" to the tail of the list
+Add "Wall Street" to the tail of the list
+Add "Brooklyn Bridge" to the tail of the list
+Then print the list again.
+
+Checkpoint 4 Passed
+
+Hint
+The output should now look like:
+
+Central Park
+Grand Central
+Times Square
+Penn Station
+Wall Street
+Brooklyn Bridge
+4.
+Oh no! There’s construction happening on the subway line: the Central Park and Brooklyn Bridge stops will temporarily be closed.
+
+Remove them from your list without iterating through the entire list.
+
+Then print the list again.
+
+Checkpoint 5 Passed
+
+Hint
+Since these stops are the head and tail of your list, you can use your .remove_head() and .remove_tail() methods instead of iterating through the list using .remove_by_value().
+
+5.
+It turns out that the Times Square station is under construction as well. Remove it from the list, and then print the list for the last time.
+
+Checkpoint 6 Passed
+
+Hint
+Remember to use your .remove_by_value() method.
