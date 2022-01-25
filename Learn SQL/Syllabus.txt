@@ -1,0 +1,64 @@
+Course Description
+Learn to communicate with databases using SQL, the standard data management language.
+
+Details
+Earn a certificate of completion
+8 hours to complete in total
+Beginner
+
+Manipulation
+Learn how to use SQL to access, create, and update data stored in a database.
+
+Practice Pack|Cheatsheet
+Complete
+Lesson
+
+Manipulation
+
+Complete
+Quiz
+
+Manipulation
+
+Complete
+Project
+
+Create a Table
+
+Current
+Article
+
+What is SQLite?
+
+
+Queries
+Perform more complex queries by learning essential query keywords and functionality
+
+Lesson
+Queries
+Quiz
+Queries
+Project
+New York Restaurants
+
+Aggregate Functions
+Learn powerful functions for performing complex database operations with ease.
+
+Lesson
+Aggregate Functions
+Quiz
+Aggregate Functions
+Project
+Trends in Startups
+Project
+How to Hack Hacker News
+
+Multiple Tables
+Expand your SQL skills by creating and manipulating databases with multiple related tables
+
+Lesson
+Multiple Tables
+Project
+Lyft Trip Data
+Quiz
+Multiple Tables
