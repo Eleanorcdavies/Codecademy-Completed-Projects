@@ -1,0 +1,82 @@
+Learn the Command Line
+
+Discover the power of this simple yet essential text-based tool and increase your productivity as a developer.
+
+Syllabus
+80% progress
+80%
+Get up and running with the command line by navigating directories and files.
+
+Practice concepts
+|
+View cheatsheet
+Complete
+Article
+Introduction to Command Line
+Complete
+Lesson
+Navigation
+Complete
+Quiz
+Navigation
+Complete
+Project
+Bicycle World
+Current
+Article
+Command Line Interface Setup
+Reset Progress
+Resume
+Learn to manipulate directories and files from the command line.
+
+Practice concepts
+|
+View cheatsheet
+Complete
+Lesson
+Manipulation
+Complete
+Quiz
+Viewing and Changing the File System
+Complete
+Project
+Artusi
+Reset Progress
+Learn to redirect input and output to and from files and programs.
+
+Practice concepts
+|
+View cheatsheet
+Complete
+Lesson
+Redirection
+Complete
+Quiz
+Redirecting Input and Output
+Complete
+Project
+Athletica
+Reset Progress
+Learn to configure the environment using the command line. We will also introduce how to access and use the command line in Windows.
+
+Practice concepts
+|
+View cheatsheet
+Complete
+Informational
+Configuring the Command Line Environment
+Complete
+Lesson
+Environment
+Complete
+Quiz
+Configuring the Environment
+Complete
+Project
+Attica
+Complete
+Article
+Lingua Franca - An Offline Project
+Complete
+Article
+Windows Command Line
