@@ -1,0 +1,91 @@
+$ pwd
+/home/ccuser/workspace/clothing
+$ touch hello.txt
+$ ls
+dresses.txt  jackets.txt  scarves.txt  socks.txt
+hello.txt    pants.txt    shirts.txt   sweaters.txt
+$ nano hello.txt 
+$ clear
+$ nano ~/profile/
+$ ls
+dresses.txt  jackets.txt  scarves.txt  socks.txt
+hello.txt    pants.txt    shirts.txt   sweaters.txt
+$ nano ~/.bash_profile
+$ clear
+$ source ~/.bash_profile
+Hello
+$ nano ~/.bash_profile
+$ source ~/.bash_profile
+Hello
+$ p
+/home/ccuser/workspace/clothing
+$ ll
+total 4
+drwxr-xr-x 2 ccuser ccuser 152 Jan  7 20:04 .
+drwxrwxr-x 1 ccuser ccuser  22 Jan  7 19:57 ..
+-rw-r--r-- 1 ccuser ccuser   0 Jan  7 19:57 dresses.txt
+-rw-r--r-- 1 ccuser ccuser  19 Jan  7 20:04 hello.txt
+-rw-r--r-- 1 ccuser ccuser   0 Jan  7 19:57 jackets.txt
+-rw-r--r-- 1 ccuser ccuser   0 Jan  7 19:57 pants.txt
+-rw-r--r-- 1 ccuser ccuser   0 Jan  7 19:57 scarves.txt
+-rw-r--r-- 1 ccuser ccuser   0 Jan  7 19:57 shirts.txt
+-rw-r--r-- 1 ccuser ccuser   0 Jan  7 19:57 socks.txt
+-rw-r--r-- 1 ccuser ccuser   0 Jan  7 19:57 sweaters.txt
+$ nano ~/.bash_profile
+$ echo $USER
+
+$ nano ~/.bash_profile
+$ echo $USER
+
+$ echo USER
+USER
+$ echo $USER
+
+$ nano ~/.bash_profile
+$ nano ~/.bash_profile
+$ source ~/.bash_profile
+Hello
+$ echo USER
+USER
+$ echo $USER
+Eleanor Davies
+$ nano ~/.bash_profile
+$ source ~/.bash_profile
+Hello
+bash: export: `PS1->> ': not a valid identifier
+$ nano ~/.bash_profile
+$ source ~/.bash_profile
+Hello
+>> pwd
+/home/ccuser/workspace/clothing
+>> ls
+dresses.txt  jackets.txt  scarves.txt  socks.txt
+hello.txt    pants.txt    shirts.txt   sweaters.txt
+>> echo $HOME
+/home/ccuser
+>> echo PATH
+PATH
+>> echo $PATH
+/home/ccuser/.bin:/home/ccuser/node_modules/.bin:/home/ccuser/.gem/ruby/2.3.0/bin:/home/ccuser/.composer/vendor/bin:/home/ccuser/.bin:/home/ccuser/node_modules/.bin:/home/ccuser/.gem/ruby/2.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+>> enc
+bash: enc: command not found
+>> env
+HOSTNAME=5672e333beca
+GEM_HOME=/home/ccuser/.gem/ruby/2.3.0
+TERM=xterm
+USER=Eleanor Davies
+EXPIRES_AT=1673125028
+NLTK_DATA=/home/ccuser/.nltk_data
+PATH=/home/ccuser/.bin:/home/ccuser/node_modules/.bin:/home/ccuser/.gem/ruby/2.3.0/bin:/home/ccuser/.composer/vendor/bin:/home/ccuser/.bin:/home/ccuser/node_modules/.bin:/home/ccuser/.gem/ruby/2.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+CODEX_RUNNER_PATH=/var/codecademy/codex/runners
+PWD=/home/ccuser/workspace/clothing
+MPLBACKEND=agg
+LANG=en_US.UTF-8
+SESSION_ID=ca6d9bf7-9bde-4950-b16c-a12f09232a5c
+TZ=Etc/UTC
+PS1=>> 
+SHLVL=1
+HOME=/home/ccuser
+EIN_IMAGE=default
+PYTHONPATH=/var/codecademy/runner_contexts/python:
+_=/usr/bin/env
