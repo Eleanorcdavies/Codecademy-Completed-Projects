@@ -1,0 +1,116 @@
+Learn JavaScript
+Learn how to use JavaScript — a powerful and flexible programming language for adding website interactivity.
+
+4.6
+
+2,517 ratings
+Start
+
+
+
+2,308,285 learners enrolled
+Skill level
+
+Beginner
+Time to complete
+
+Approx. 20 hours
+Certificate of completion
+
+Included with paid plans
+Prerequisites
+
+None
+About this course
+You interact with JavaScript code all the time — you just might not realize it. It powers dynamic behavior on websites (like this one) and plays an important role in many fields, like front- and back-end engineering, game and mobile development, virtual reality, and more. In this course, you’ll learn JavaScript fundamentals that will be helpful as you dive deeper into more advanced topics.
+
+Skills you'll gain
+Build core programming concepts
+
+Learn object-oriented concepts
+
+Read and write JavaScript
+
+Syllabus
+11 lessons • 12 projects • 8 quizzes
+Collapse all sections
+
+Informational
+Welcome to Learn JavaScript
+
+Lesson
+Introduction to JavaScript
+Lesson
+Variables
+Project
+Kelvin Weather
+Project
+Dog Years
+Quiz
+Introduction to JavaScript
+Article
+JavaScript Versions: ES6 and Before
+Article
+Make the Most of Your Codecademy Membership
+
+Lesson
+Conditional Statements
+Project
+Magic Eight Ball
+Project
+Race Day
+Quiz
+Conditional Statements
+
+Lesson
+Functions
+Project
+Rock, Paper, or Scissors
+Project
+Sleep Debt Calculator
+Quiz
+Functions
+
+Lesson
+Scope
+Project
+Training Days
+Quiz
+Scope
+
+Lesson
+Arrays
+Project
+Secret Message
+Quiz
+Arrays
+
+Lesson
+Loops
+Project
+Whale Talk
+Quiz
+Loops
+
+Lesson
+Higher-Order Functions
+Lesson
+Iterators
+Quiz
+Higher Order Functions and Iterators
+Project
+Grammar Checker
+
+Lesson
+Objects
+Lesson
+Advanced Objects
+Project
+Meal Maker
+Project
+Team Stats
+Quiz
+Objects
+
+Informational
+Learn JavaScript: Next Steps
