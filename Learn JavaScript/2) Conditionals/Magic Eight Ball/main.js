@@ -2,13 +2,13 @@ let userName = "Eleanor";
 
 userName ? console.log(`Hello, ${userName}`) : console.log( "Hello!");
 
-let userQuestion = "Will I win the lottery?"
+let userQuestion = "Am I going to win the lottery?"
 console.log(`${userName} has asked: ${userQuestion}`);
 
 let randomNumber = Math.floor(Math.random() * 8);
 let eightBall = "";
 
-switch (randomNumber % 7) {
+switch (randomNumber) {
   case 0:
     eightBall = ('It is certain')
     break;
