@@ -41,8 +41,8 @@ function determineWinner(userChoice, computerChoice) {
 
 // console.log(determineWinner(getUserChoice("rock"), getComputerChoice()));
 
-playGame("rock");
-playGame("Bomb");
+// playGame("rock");
+// playGame("Bomb");
 
 function playGame(userInput){
   let userChoice = getUserChoice(userInput);
@@ -51,7 +51,7 @@ function playGame(userInput){
   } else {
     console.log("The user has thrown "+ userChoice);
     let computerChoice = getComputerChoice();
-    console.log("The computer has thrown" + computerChoice);
+    console.log("The computer has thrown " + computerChoice);
     console.log(determineWinner(userChoice, computerChoice));
     return determineWinner(userChoice, computerChoice);  
   }
